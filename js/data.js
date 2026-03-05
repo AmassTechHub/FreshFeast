@@ -121,7 +121,7 @@ const menuData = [
     price: 4.99,
     rating: 4.5,
     description: 'Freshly squeezed lemonade with mint',
-    image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=500&h=400&fit=crop',
+    image: 'images/freshlemonade.png',
     popular: false
   },
   {

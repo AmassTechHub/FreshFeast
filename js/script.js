@@ -344,7 +344,7 @@ function loadPopularMeals() {
         </div>
         <p class="meal-card-description">${meal.description}</p>
         <div class="meal-card-footer">
-          <span class="meal-card-price">$${meal.price.toFixed(2)}</span>
+          <span class="meal-card-price">₵${meal.price.toFixed(2)}</span>
           <button class="meal-card-add" onclick="addToCartFromHome(${meal.id})"><span>Add to Cart</span></button>
         </div>
       </div>
@@ -401,7 +401,7 @@ function loadMenuItems(category = 'all') {
         </div>
         <p class="menu-item-description">${item.description}</p>
         <div class="menu-item-footer">
-          <span class="menu-item-price">$${item.price.toFixed(2)}</span>
+          <span class="menu-item-price">₵${item.price.toFixed(2)}</span>
           <button class="menu-item-btn" onclick="addToCartFromMenu(${item.id})"><span>Add to Cart</span></button>
         </div>
       </div>
@@ -518,7 +518,7 @@ function loadOrderMenuItems() {
       <div class="order-menu-item-details">
         <div class="order-menu-item-header">
           <h3 class="order-menu-item-title">${item.name}</h3>
-          <span class="order-menu-item-price">$${item.price.toFixed(2)}</span>
+          <span class="order-menu-item-price">₵${item.price.toFixed(2)}</span>
         </div>
         <p class="order-menu-item-description">${item.description}</p>
         <div class="order-menu-item-actions">
@@ -583,7 +583,7 @@ function renderOrderCart() {
           <h4 class="cart-item-title">${item.name}</h4>
           <button class="cart-item-remove" onclick="removeFromOrderCart(${item.id})" aria-label="Remove item">🗑️</button>
         </div>
-        <p class="cart-item-price">$${item.price.toFixed(2)}</p>
+        <p class="cart-item-price">₵${item.price.toFixed(2)}</p>
         <div class="cart-item-quantity">
           <button onclick="updateCartItemQuantity(${item.id}, ${item.quantity - 1})">-</button>
           <span>${item.quantity}</span>
@@ -599,9 +599,9 @@ function renderOrderCart() {
 
   if (cartSummary) {
     cartSummary.style.display = 'block';
-    document.getElementById('cartSubtotal').textContent = `$${subtotal.toFixed(2)}`;
-    document.getElementById('cartTax').textContent = `$${tax.toFixed(2)}`;
-    document.getElementById('cartTotal').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('cartSubtotal').textContent = `₵${subtotal.toFixed(2)}`;
+    document.getElementById('cartTax').textContent = `₵${tax.toFixed(2)}`;
+    document.getElementById('cartTotal').textContent = `₵${total.toFixed(2)}`;
   }
 
   if (orderForm) {
@@ -698,7 +698,7 @@ function renderCartPage() {
       <img src="${item.image}" alt="${item.name}" class="cart-page-item-image" onerror="this.src='https://via.placeholder.com/100?text=Food'">
       <div class="cart-page-item-info">
         <h3 class="cart-page-item-name">${item.name}</h3>
-        <p class="cart-page-item-price">$${item.price.toFixed(2)}</p>
+        <p class="cart-page-item-price">₵${item.price.toFixed(2)}</p>
       </div>
       <div class="cart-page-item-controls">
         <div class="cart-page-quantity">
@@ -723,9 +723,9 @@ function updateCartSummary() {
   const summaryDelivery = document.getElementById('summaryDelivery');
   const summaryTotal = document.getElementById('summaryTotal');
 
-  if (summarySubtotal) summarySubtotal.textContent = `$${subtotal.toFixed(2)}`;
-  if (summaryDelivery) summaryDelivery.textContent = `$${deliveryFee.toFixed(2)}`;
-  if (summaryTotal) summaryTotal.textContent = `$${total.toFixed(2)}`;
+  if (summarySubtotal) summarySubtotal.textContent = `₵${subtotal.toFixed(2)}`;
+  if (summaryDelivery) summaryDelivery.textContent = `₵${deliveryFee.toFixed(2)}`;
+  if (summaryTotal) summaryTotal.textContent = `₵${total.toFixed(2)}`;
 }
 
 function updateCartPageQuantity(itemId, newQuantity) {
