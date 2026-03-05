@@ -15,3 +15,14 @@ Thumbs.db
 
 # Optional: Ignore local images if using external CDN
 # images/*
+
+# Node.js (for local PDF generation only - not part of website)
+node_modules/
+package.json
+package-lock.json
+*.js.map
+
+# PDF generation (submission files - keep local)
+*.pdf
+generate-pdf.js
+generate_pdfs.py

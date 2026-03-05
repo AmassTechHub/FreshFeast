@@ -335,7 +335,7 @@ Total = Subtotal + Tax
 - Remove item functionality
 - Promo code system
  - "FRESH10" = 10% discount
-- Delivery fee calculation (₵3.99)
+- Delivery fee calculation (₵15.00)
 - Order summary sidebar
 - Continue shopping link
 - Recommended items section
@@ -3572,8 +3572,8 @@ Any other relevant information
 
 ### 19.1 Project Team
 
-**Project Manager**
-- Role: Overall project coordination
+**Nortey Seth Tawiah Junior - Project Manager**
+- Role: Overall project coordination and leadership
 - Responsibilities:
   - Timeline management
   - Resource allocation
@@ -3581,26 +3581,44 @@ Any other relevant information
   - Risk management
   - Quality assurance
 
-**Front-End Developers (2)**
-- Role: HTML/CSS development
+**Theophilus Amankwah - Lead Full-Stack Developer**
+- Role: Technical lead and development
+- Responsibilities:
+  - Architecture design
+  - Full-stack development
+  - Code review and quality
+  - Team technical guidance
+  - Performance optimization
+
+**Crispen Dela Atsyor - Frontend Developer**
+- Role: UI implementation
 - Responsibilities:
   - Page structure implementation
   - Responsive design
+  - Component development
   - Cross-browser compatibility
   - Accessibility compliance
-  - Performance optimization
 
-**JavaScript Developer**
-- Role: Client-side functionality
+**Godsaid Opoku Agyeman - Frontend Developer**
+- Role: UI/UX implementation
 - Responsibilities:
   - Interactive features
-  - Cart system
+  - Animation and transitions
   - Form validation
-  - LocalStorage management
-  - API integration prep
+  - User experience optimization
+  - Design system implementation
 
-**UI/UX Designer**
-- Role: User interface and experience
+**Woeyram Nutifafa Kodzo Agbebo - Backend Developer**
+- Role: Server-side logic (future backend)
+- Responsibilities:
+  - API design
+  - Database architecture
+  - LocalStorage management
+  - Data persistence
+  - Integration preparation
+
+**Suhair Mariam Kunguo-M Issahaku - UI/UX Designer**
+- Role: User interface and experience design
 - Responsibilities:
   - Wireframe creation
   - Visual design
@@ -3608,7 +3626,7 @@ Any other relevant information
   - User flow optimization
   - Usability testing
 
-**QA Engineer**
+**Samuella Yeboah Adoma - QA Engineer**
 - Role: Quality assurance and testing
 - Responsibilities:
   - Test plan creation
@@ -3617,16 +3635,16 @@ Any other relevant information
   - Regression testing
   - Performance testing
 
-**Documentation Lead**
-- Role: Technical documentation
+**Elisha Ohene Amoako - Content Manager**
+- Role: Content strategy and documentation
 - Responsibilities:
   - README maintenance
   - Code documentation
   - User guides
-  - API documentation (future)
+  - Content creation
   - Team knowledge sharing
 
-**DevOps Engineer**
+**Benjamin Kofi Sekyi - DevOps Engineer**
 - Role: Deployment and infrastructure
 - Responsibilities:
   - GitHub configuration
@@ -3634,6 +3652,15 @@ Any other relevant information
   - Domain management
   - CDN optimization
   - Monitoring setup
+
+**Stephen Yeboah - Marketing & Business Development**
+- Role: Business strategy and growth
+- Responsibilities:
+  - Market research
+  - User acquisition strategy
+  - Brand development
+  - Analytics tracking
+  - Stakeholder management
 
 ### 19.2 Contribution Guidelines
 
