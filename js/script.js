@@ -345,7 +345,7 @@ function loadPopularMeals() {
         <p class="meal-card-description">${meal.description}</p>
         <div class="meal-card-footer">
           <span class="meal-card-price">$${meal.price.toFixed(2)}</span>
-          <button class="meal-card-add" onclick="addToCartFromHome(${meal.id})">Add to Cart</button>
+          <button class="meal-card-add" onclick="addToCartFromHome(${meal.id})"><span>Add to Cart</span></button>
         </div>
       </div>
     </div>
@@ -402,7 +402,7 @@ function loadMenuItems(category = 'all') {
         <p class="menu-item-description">${item.description}</p>
         <div class="menu-item-footer">
           <span class="menu-item-price">$${item.price.toFixed(2)}</span>
-          <button class="menu-item-btn" onclick="addToCartFromMenu(${item.id})">Add to Cart</button>
+          <button class="menu-item-btn" onclick="addToCartFromMenu(${item.id})"><span>Add to Cart</span></button>
         </div>
       </div>
     </div>
@@ -527,7 +527,7 @@ function loadOrderMenuItems() {
             <span class="quantity-value" id="qty-value-${item.id}">1</span>
             <button class="quantity-btn" onclick="updateOrderQuantity(${item.id}, 1)">+</button>
           </div>
-          <button class="add-to-cart-btn" onclick="addToCartFromOrder(${item.id})">Add to Cart</button>
+          <button class="add-to-cart-btn" onclick="addToCartFromOrder(${item.id})"><span>Add to Cart</span></button>
         </div>
       </div>
     </div>
@@ -1074,6 +1074,51 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+// ===================================
+// Enhanced UI Features
+// ===================================
+
+// Navbar scroll effect
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+});
+
+// Intersection Observer for fade-in animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '0';
+      entry.target.style.transform = 'translateY(30px)';
+      
+      setTimeout(() => {
+        entry.target.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }, 100);
+      
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+// Observe elements for animation
+document.addEventListener('DOMContentLoaded', function() {
+  const animatedElements = document.querySelectorAll('.meal-card, .feature-card, .step-card, section > .container > h2');
+  animatedElements.forEach(el => observer.observe(el));
+});
 
 // Export functions to global scope for onclick handlers
 window.addToCartFromHome = addToCartFromHome;

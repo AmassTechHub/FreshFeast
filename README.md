@@ -300,11 +300,12 @@ This project was created as part of a web-based concepts project (January 2026).
 ## 📞 Contact
 
 For questions or support:
-- Email: hello@freshfeast.com
-- Phone: +123 456 7890
+- Email: info@freshfeast.com
+- Phone: 0243521850
+- Location: KNUST Campus
 
 ---
 
 **Project Date**: January 29, 2026  
-**Project Name**: 047 Restaurant Website  
+**Project Name**: FreshFeast Organic Food Ordering Platform  
 **Built with**: ❤️ HTML, CSS, and JavaScript
