@@ -10,7 +10,7 @@ const menuData = [
     price: 14.99,
     rating: 4.9,
     description: 'Golden patties with premium chicken, freshly tossed salads and seasoning',
-    image: 'images/burger.jpg',
+    image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=400&fit=crop',
     popular: true
   },
   {
@@ -20,7 +20,7 @@ const menuData = [
     price: 22.99,
     rating: 4.8,
     description: 'Fresh Salmon with fish seasonings and herbs, served with fresh vegetables',
-    image: 'images/salmon.jpg',
+    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&h=400&fit=crop',
     popular: true
   },
   {
@@ -30,7 +30,7 @@ const menuData = [
     price: 16.99,
     rating: 4.7,
     description: ' Mixed greens, cherry tomatoes, avocado, and balsamic vinaigrette',
-    image: 'images/salad.jpg',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=400&fit=crop',
     popular: true,
     badge: 'Healthy Choice'
   },
@@ -41,7 +41,7 @@ const menuData = [
     price: 18.99,
     rating: 4.9,
     description: 'Creamy pasta with pancetta, parmesan, and black truffle',
-    image: 'images/pasta.jpg',
+    image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop',
     popular: true
   },
   {
@@ -51,7 +51,7 @@ const menuData = [
     price: 15.99,
     rating: 4.6,
     description: 'Fresh mozzarella, tomato sauce, basil, and olive oil',
-    image: 'images/pizza.jpg',
+    image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -61,7 +61,7 @@ const menuData = [
     price: 12.99,
     rating: 4.5,
     description: 'Grilled chicken, lettuce, tomatoes, and special sauce',
-    image: 'images/wrap.jpg',
+    image: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -71,7 +71,7 @@ const menuData = [
     price: 8.99,
     rating: 4.4,
     description: 'Romaine lettuce, parmesan, croutons, and Caesar dressing',
-    image: 'images/caesar.jpg',
+    image: 'https://images.unsplash.com/photo-1546793665-c74683f339c1?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -81,7 +81,7 @@ const menuData = [
     price: 11.99,
     rating: 4.7,
     description: 'Crispy wings with your choice of sauce',
-    image: 'images/wings.jpg',
+    image: 'https://images.unsplash.com/photo-1608039755401-742074f0548d?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -91,7 +91,7 @@ const menuData = [
     price: 10.99,
     rating: 4.6,
     description: 'Tortilla chips with cheese, jalapeños, and toppings',
-    image: 'images/nachos.jpg',
+    image: 'https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -101,7 +101,7 @@ const menuData = [
     price: 7.99,
     rating: 4.9,
     description: 'Warm chocolate cake with molten center',
-    image: 'images/lava-cake.jpg',
+    image: 'https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -111,7 +111,7 @@ const menuData = [
     price: 8.99,
     rating: 4.8,
     description: 'Classic Italian dessert with coffee and mascarpone',
-    image: 'images/tiramisu.jpg',
+    image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -121,7 +121,7 @@ const menuData = [
     price: 4.99,
     rating: 4.5,
     description: 'Freshly squeezed lemonade with mint',
-    image: 'images/lemonade.jpg',
+    image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f9e?w=500&h=400&fit=crop',
     popular: false
   },
   {
@@ -131,21 +131,21 @@ const menuData = [
     price: 5.99,
     rating: 4.6,
     description: 'Cold brew coffee with ice and milk',
-    image: 'images/iced-coffee.jpg',
+    image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=500&h=400&fit=crop',
     popular: false
   }
 ];
 
 // Gallery Data
 const galleryData = [
-  { id: 1, image: 'images/gallery-1.jpg', title: 'Delicious Burger' },
-  { id: 2, image: 'images/gallery-2.jpg', title: 'Fresh Salad' },
-  { id: 3, image: 'images/gallery-3.jpg', title: 'Grilled Salmon' },
-  { id: 4, image: 'images/gallery-4.jpg', title: 'Pasta Dish' },
-  { id: 5, image: 'images/gallery-5.jpg', title: 'Pizza Slice' },
-  { id: 6, image: 'images/gallery-6.jpg', title: 'Dessert' },
-  { id: 7, image: 'images/gallery-7.jpg', title: 'Restaurant Interior' },
-  { id: 8, image: 'images/gallery-8.jpg', title: 'Coffee' }
+  { id: 1, image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=600&fit=crop', title: 'Delicious Burger' },
+  { id: 2, image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=600&fit=crop', title: 'Fresh Salad' },
+  { id: 3, image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&h=600&fit=crop', title: 'Grilled Salmon' },
+  { id: 4, image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=600&fit=crop', title: 'Pasta Dish' },
+  { id: 5, image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=600&fit=crop', title: 'Pizza Slice' },
+  { id: 6, image: 'https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600&h=600&fit=crop', title: 'Dessert' },
+  { id: 7, image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=600&fit=crop', title: 'Restaurant Interior' },
+  { id: 8, image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=600&h=600&fit=crop', title: 'Coffee' }
 ];
 
 export { menuData, galleryData };
